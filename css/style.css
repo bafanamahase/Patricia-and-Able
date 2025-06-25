@@ -8757,3 +8757,42 @@ textarea.form-control {
   .block-18 .text .number {
     color: black !important;
   }
+
+  .custom-img {
+    height: 600px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .row.flex-nowrap {
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+
+  /* Optional: smoother scroll on mobile */
+  .row.flex-nowrap::-webkit-scrollbar {
+    height: 48px;
+  }
+
+  .row.flex-nowrap::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 3px;
+  }
+
+  .about-img {
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+    max-height: 500px; /* adjust to control image size */
+   object-fit: contain;  /*preserves full image without cropping */
+    display: block;
+    margin: 0 auto;
+
+  }
+  
+  /* Prevent any hover zoom only for this image */
+  .project:hover .about-img,
+  .about-img:hover {
+    transform: none !important;
+    transition: none !important;
+  }
