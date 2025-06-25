@@ -8796,3 +8796,11 @@ textarea.form-control {
     transform: none !important;
     transition: none !important;
   }
+
+  @media (max-width: 768px) {
+  .hero-slider {
+    overflow: hidden;
+    pointer-events: none;
+    touch-action: none;
+  }
+}
